@@ -1,0 +1,4 @@
+BasedOnStyle: Google
+AlwaysBreakBeforeMultilineStrings: true
+BreakStringLiterals: false
+ReflowComments: false
