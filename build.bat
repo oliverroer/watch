@@ -3,5 +3,5 @@ call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary
 set output=bin
 set compilerflags=/Od /Zi /EHsc /Fd%output%/ /Fo%output%/
 mkdir %output%
-set linkerflags=/OUT:%output%/watch.exe
-cl.exe %compilerflags% src/watch.c /link %linkerflags%
+set linkerflags=/OUT:%output%/clipboard.exe 
+cl.exe %compilerflags% src/clipboard.c /link User32.lib %linkerflags%

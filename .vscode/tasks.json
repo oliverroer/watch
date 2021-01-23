@@ -11,7 +11,7 @@
                 "isDefault": true
             },
             "windows": {
-                "command": "./build.bat"
+                "command": "${workspaceFolder}\\build.bat"
             },
             "problemMatcher": {
                 "base": "$msCompile",
@@ -24,10 +24,7 @@
             "type": "shell",
             "group": "build",
             "windows": {
-                "command": "del",
-                "args": [
-                    "./bin/*"
-                ]
+                "command": "RMDIR /S /Q ${workspaceFolder}\\bin || EXIT /B 0"
             },
             "problemMatcher": []
         }

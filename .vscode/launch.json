@@ -8,23 +8,17 @@
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bin/watch.exe",
+            "program": "${workspaceFolder}\\bin\\clipboard.exe",
             "args": [
-                "-t",
-                "--cmd",
-                "-b",
-                "-n",
-                "1",
-                //"-e",
-                "type",
-                "..\\hello.txt"
+//                "<",
+//                "${workspaceFolder}\\README.md"
             ],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/bin",
+            "cwd": "${workspaceFolder}\\bin",
             "environment": [],
             "externalConsole": true,
             "preLaunchTask": "build",
-            "symbolSearchPath": "${workspaceFolder}/bin"
+            "symbolSearchPath": "${workspaceFolder}\\bin"
         }
     ]
 }
